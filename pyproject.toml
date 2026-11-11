@@ -1,0 +1,16 @@
+[project]
+name = "slskd-utils"
+version = "1.0.0"
+description = "A collection of utilities for interacting with an slskd server"
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.5.1",
+    "slskd-api>=0.2.4"
+]
+
+[project.scripts]
+slskd-utils = "slskd_utils.main:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
